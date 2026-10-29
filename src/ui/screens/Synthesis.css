@@ -1,13 +1,15 @@
 .parents {
   display: grid;
   grid-template-columns: 1fr 32px 1fr;
-  align-items: center;
+  /* 片方だけ選んだときも2枚のカードの高さをそろえる */
+  align-items: stretch;
   gap: 6px;
 }
 .parents-plus {
   color: var(--accent);
   display: grid;
   place-items: center;
+  align-self: center;
 }
 .parents-plus svg {
   width: 32px;

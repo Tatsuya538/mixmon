@@ -31,6 +31,11 @@ test('主要画面を一通り操作できる（390×844）', async ({ page }) =
   await page.getByRole('button', { name: '親Aを選ぶ' }).click();
   await shot(page, '03-parent-select');
   await page.getByRole('button', { name: /ヒノコロ/ }).click();
+  // 片方だけ選んだ状態でも親カードの高さがそろっている
+  const heights = await page
+    .locator('.parent-card')
+    .evaluateAll((els) => els.map((e) => e.getBoundingClientRect().height));
+  expect(heights[0]).toBeCloseTo(heights[1], 0);
   await page.getByRole('button', { name: '親Bを選ぶ' }).click();
   await page.getByRole('button', { name: /ミズプル/ }).click();
   await shot(page, '04-synthesis-ready');
