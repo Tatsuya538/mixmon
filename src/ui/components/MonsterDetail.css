@@ -1,0 +1,68 @@
+.rank-line {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+.rank-line .badge {
+  height: 32px;
+  min-width: 40px;
+  font-size: 15px;
+}
+.stat-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+.stat-box {
+  background: var(--card);
+  border-radius: var(--radius-m);
+  padding: 12px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.stat-box span {
+  font-size: 13px;
+  color: var(--text-sub);
+}
+.stat-box b {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 26px;
+}
+.lineage h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.lineage p {
+  margin: 0;
+}
+.lineage dl {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px 8px;
+  margin: 0;
+  align-items: start;
+}
+.lineage dt {
+  color: var(--text-sub);
+  padding-top: 7px;
+}
+.lineage dd {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.lineage-chip {
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 14px;
+}
+.lineage-chip.shiny {
+  border-color: var(--shiny);
+}

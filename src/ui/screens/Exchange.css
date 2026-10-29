@@ -1,0 +1,80 @@
+.exchange-note {
+  margin: 0;
+  font-size: 14px;
+}
+.sell-tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.sell-tools .btn {
+  min-height: 46px;
+  font-size: 15px;
+}
+.sell-bar {
+  position: sticky;
+  bottom: -24px;
+  margin: 0 calc(var(--gutter) * -1) -24px;
+  padding: 12px var(--gutter) 16px;
+  background: var(--bg-deep);
+  border-top: 1.5px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+.sell-bar span {
+  flex: 1;
+  font-size: 15px;
+}
+.sell-bar .btn {
+  width: auto;
+  min-height: 52px;
+  font-size: 18px;
+}
+.warn {
+  color: var(--shiny);
+}
+.buy-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.buy-item {
+  background: var(--card);
+  border-radius: var(--radius-m);
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.buy-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.buy-name {
+  font-size: 17px;
+}
+.buy-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+.buy-btn {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: var(--radius-s);
+  padding: 12px 14px;
+  font-size: 15px;
+  min-width: 76px;
+}
+.buy-btn:disabled {
+  opacity: 0.35;
+}

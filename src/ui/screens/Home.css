@@ -1,0 +1,135 @@
+.logo {
+  font-family: var(--font-head);
+  font-weight: 400;
+  color: var(--accent);
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+.dex-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 20px;
+}
+.dex-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 17px;
+}
+.big-count {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 34px;
+}
+.big-count small {
+  font-size: 18px;
+  color: var(--text-sub);
+}
+.bar {
+  height: 12px;
+  border-radius: 999px;
+  background: var(--card-2);
+  overflow: hidden;
+}
+.bar > div {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 0.4s;
+}
+.dex-card-sub {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+}
+.gacha-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: var(--radius-l);
+  padding: 20px 16px;
+  text-align: left;
+}
+.gacha-banner > svg {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+}
+.gacha-banner-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.gacha-banner-text b {
+  font-size: 18px;
+  word-break: keep-all;
+}
+.gacha-banner-text small {
+  font-size: 13px;
+}
+.gacha-banner-btn {
+  background: var(--bg);
+  color: var(--accent);
+  border-radius: var(--radius-m);
+  padding: 14px 18px;
+  font-family: var(--font-head);
+  font-size: 17px;
+  flex-shrink: 0;
+}
+.recent-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.recent-item {
+  background: var(--card);
+  border-radius: var(--radius-l);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.recent-art {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-m);
+  background: var(--card-2);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.recent-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.recent-name {
+  font-size: 19px;
+}
+.recent-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.home > .btn {
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.volatile-note {
+  margin: 0;
+  font-size: 13px;
+  color: var(--shiny);
+  text-align: center;
+}

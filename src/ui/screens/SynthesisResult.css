@@ -1,0 +1,80 @@
+.result-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+}
+.result-badge {
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 16px;
+  color: var(--on-accent);
+  animation: pop 0.4s ease-out both;
+}
+.result-badge.shiny {
+  background: var(--shiny);
+}
+.result-badge.accent {
+  background: var(--accent);
+}
+.result-badge.light {
+  background: #f4f2ff;
+}
+.result-badge.rainbow {
+  background: linear-gradient(90deg, #ff8fd0, #ffd24a, #6fd4ff, #b8f06a);
+}
+.result-art {
+  align-self: center;
+  width: min(78%, 320px);
+  aspect-ratio: 1.2;
+  background: var(--card);
+  border-radius: 40px;
+  display: grid;
+  place-items: center;
+  animation: pop 0.5s ease-out both;
+}
+.result-art.glow {
+  animation:
+    pop 0.5s ease-out both,
+    glow 2s ease-in-out 0.5s infinite;
+}
+.result-art.double {
+  background: linear-gradient(135deg, #4b3fb0, #2a2350 45%, #7a3f8f);
+  animation:
+    pop 0.5s ease-out both,
+    glow 1.4s ease-in-out 0.5s infinite;
+}
+.result-art.double .mon-art {
+  animation: rainbow 3s linear infinite;
+}
+.result-name {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+.result-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.result-actions .btn {
+  font-size: 18px;
+  min-height: 60px;
+  font-family: var(--font-body);
+  font-weight: 800;
+}
+
+.share-preview {
+  width: 100%;
+  border-radius: var(--radius-m);
+}
+
+.result-story {
+  margin: -8px 0 0;
+  text-align: center;
+  color: var(--accent);
+  font-size: 15px;
+}

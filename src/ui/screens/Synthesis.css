@@ -1,0 +1,127 @@
+.parents {
+  display: grid;
+  grid-template-columns: 1fr 32px 1fr;
+  align-items: center;
+  gap: 6px;
+}
+.parents-plus {
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+}
+.parents-plus svg {
+  width: 32px;
+  height: 32px;
+}
+.parent-card {
+  background: var(--card);
+  border: 2.5px solid var(--line);
+  border-radius: var(--radius-l);
+  aspect-ratio: 0.78;
+  padding: 14px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  min-width: 0;
+}
+.parent-card.shiny {
+  border-color: var(--accent);
+}
+.parent-label {
+  align-self: flex-start;
+  font-size: 14px;
+  color: var(--text-sub);
+  padding-left: 6px;
+}
+.parent-name {
+  font-size: 19px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.parent-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+.parent-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+.arrow {
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  margin: -6px 0;
+}
+.preview {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 18px;
+}
+.preview-art {
+  width: 34%;
+  max-width: 130px;
+  aspect-ratio: 1;
+  border-radius: var(--radius-m);
+  background: var(--card-2);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.preview-art span {
+  font-family: var(--font-head);
+  font-size: 56px;
+  color: var(--text-dim);
+}
+.preview-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 10px;
+  margin: 0;
+}
+.preview-grid dt {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-bottom: 4px;
+}
+.preview-grid dd {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+.shiny-text {
+  color: var(--shiny);
+}
+.hint-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px dashed var(--line);
+  border-radius: var(--radius-l);
+  padding: 16px 18px;
+  color: var(--text-sub);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.hint-box svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.synthesis-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

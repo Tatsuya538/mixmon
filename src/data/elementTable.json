@@ -1,0 +1,37 @@
+{
+  "fire": {
+    "fire": "fire",
+    "water": "thunder",
+    "thunder": "fire",
+    "forest": "shadow",
+    "shadow": "fire"
+  },
+  "water": {
+    "fire": "thunder",
+    "water": "water",
+    "thunder": "water",
+    "forest": "forest",
+    "shadow": "water"
+  },
+  "thunder": {
+    "fire": "fire",
+    "water": "water",
+    "thunder": "thunder",
+    "forest": "forest",
+    "shadow": "shadow"
+  },
+  "forest": {
+    "fire": "shadow",
+    "water": "forest",
+    "thunder": "forest",
+    "forest": "forest",
+    "shadow": "thunder"
+  },
+  "shadow": {
+    "fire": "fire",
+    "water": "water",
+    "thunder": "shadow",
+    "forest": "thunder",
+    "shadow": "shadow"
+  }
+}

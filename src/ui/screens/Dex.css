@@ -1,0 +1,37 @@
+.dex-total {
+  font-family: var(--font-head);
+  color: var(--accent);
+  font-size: 30px;
+}
+.dex-total small {
+  font-size: 16px;
+  color: var(--text-sub);
+}
+.dex-tile {
+  padding-top: 10px;
+}
+.dex-tile .name.unknown {
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+.dex-foot {
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+.dex-detail-art {
+  display: grid;
+  place-items: center;
+}
+.dex-detail-meta {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.modal p.dex-hint {
+  background: var(--card-2);
+  border-radius: var(--radius-m);
+  padding: 14px;
+  color: var(--text);
+}
